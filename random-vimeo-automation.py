@@ -4,16 +4,17 @@ import json
 import random 
 from twython import Twython
 
-vimeotoken = "vimeo-token"
-vimeoclientid = "vimeo-clientid"
-vimeosecret = "vimeo-secret"
-
+# Twitter setup
 APP_KEY = 'twitter-customerkey' 
 APP_SECRET = 'twitter-customersecret' 
 OAUTH_TOKEN = 'twitter-accesstoken'  # Access Token here
 OAUTH_TOKEN_SECRET = 'twitter-accesstokensecret'  # Access Token Secret here
 
-twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
+twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET) 
+
+vimeotoken = "vimeo-token"
+vimeoclientid = "vimeo-clientid"
+vimeosecret = "vimeo-secret"
 
 v = vimeo.VimeoClient(
     token=vimeotoken,
